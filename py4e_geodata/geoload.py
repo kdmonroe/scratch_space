@@ -5,10 +5,11 @@ import json
 import time
 import ssl
 import sys
+import os
 
-api_key = False
+# api_key = False
 # If you have a Google Places API key, enter it here
-# api_key = 'AIzaSy___IDByT70'
+api_key = 'AIzaSyCFw-dmP5PEd3_0_WxuIjKmGQRZqo985MY'
 
 if api_key is False:
     api_key = 42
@@ -19,6 +20,7 @@ else :
 # Additional detail for urllib
 # http.client.HTTPConnection.debuglevel = 1
 
+# NOTE: Creates SQL db for geodata
 conn = sqlite3.connect('geodata.sqlite')
 cur = conn.cursor()
 
@@ -30,7 +32,10 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-fh = open("where.data")
+# open .data file for user input data
+base_fp = r'/Users/Monroe/Documents/GitHub/scratch_space/py4e_geodata' # osx fp
+
+fh = open(os.path.join(base_fp, "where.data"))
 count = 0
 for line in fh:
     if count > 200 :
