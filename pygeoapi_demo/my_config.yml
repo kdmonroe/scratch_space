@@ -22,12 +22,14 @@ logging:
 
 metadata:
   identification:
-    title: pygeoapi Demo instance - running latest stable 0.11.0 pygeoapi version
-    description: pygeoapi provides an API to geospatial data
+    title: keon's custom pygeoapi 
+    description: This OGC API serves out redlining data.
     keywords:
       - geospatial
       - data
+      - redlining
       - api
+      - ogc
     keywords_type: theme
     terms_of_service: https://creativecommons.org/licenses/by/4.0/
     url: https://github.com/geopython/pygeoapi
@@ -41,10 +43,10 @@ metadata:
     name: Kralidis, Tom
     position: Lead Dev
     address: Mailing Address
-    city: City
-    stateorprovince: Administrative Area
+    city: Philadelphia
+    stateorprovince: Pennsylvania
     postalcode: Zip or Postal Code
-    country: Canada
+    country: United States
     phone: +xx-xxx-xxx-xxxx
     fax: +xx-xxx-xxx-xxxx
     email: you@example.org
@@ -198,43 +200,43 @@ resources:
   #              id_field: osm_id
   #              table: poi_portugal
 
-  #    hotosm_bdi_waterways:
-  #        type: collection
-  #        title: Waterways of Burundi
-  #        description: Waterways of Burundi, Africa. Dataset timestamp  1st Sep 2018 - Humanitarian OpenStreetMap Team (HOT)
-  #        keywords:
-  #            - Burundi
-  #            - Waterways
-  #            - Africa
-  #            - OSM
-  #            - HOT
-  #        crs:
-  #            - CRS84
-  #        links:
-  #            - type: text/html
-  #              rel: canonical
-  #              title: information
-  #              href: https://data.humdata.org/dataset/hotosm_bdi_waterways
-  #              hreflang: en-US
-  #        extents:
-  #            spatial:
-  #                bbox: [28.9845376683957, -4.48174334765485, 30.866396969019, -2.3096796]
-  #                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-  #            temporal:
-  #                begin:
-  #                end: null # or empty
-  #        providers:
-  #            - type: feature
-  #              name: PostgreSQL
-  #              data:
-  #                  host: 127.0.0.1
-  #                  dbname: test
-  #                  user: postgres
-  #                  password: postgres
-  #                  port: 5432
-  #                  schema: public
-  #              id_field: osm_id
-  #              table: hotosm_bdi_waterways
+    hotosm_bdi_waterways:
+        type: collection
+        title: Waterways of Burundi - TEST
+        description: Waterways of Burundi, Africa. Dataset timestamp  1st Sep 2018 - Humanitarian OpenStreetMap Team (HOT)
+        keywords:
+            - Burundi
+            - Waterways
+            - Africa
+            - OSM
+            - HOT
+        crs:
+            - CRS84
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://data.humdata.org/dataset/hotosm_bdi_waterways
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [28.9845376683957, -4.48174334765485, 30.866396969019, -2.3096796]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin:
+                end: null # or empty
+        providers:
+            - type: feature
+              name: PostgreSQL
+              data:
+                  host: 127.0.0.1
+                  dbname: test
+                  user: postgres
+                  password: postgres
+                  port: 5432
+                  schema: public
+              id_field: osm_id
+              table: hotosm_bdi_waterways
 
   dutch_windmills:
     type: collection
