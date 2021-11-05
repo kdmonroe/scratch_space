@@ -6,8 +6,8 @@ from pytube import YouTube
 SAVE_PATH = "/Users/Monroe/Downloads" #to_do
  
 # link of the video to be downloaded
-link= 'https://www.youtube.com/watch?v=ZtqBQ68cfJc'
-
+link= 'https://www.youtube.com/watch?v=xr6uZDRTna0' # web application development intro - 14 hr
+# 'https://www.youtube.com/watch?v=ZtqBQ68cfJc'
 # "https://www.youtube.com/watch?v=pkYVOmU3MgA" -- fcc jovian python data structures and algorithms
 # "https://www.youtube.com/watch?v=xWOoBJUqlbI"
 

@@ -10,4 +10,8 @@ p = Playlist(jovian_dsa_pl)
 # loop through all containing videos and download
 print(f'Downloading: {p.title}')
 for video in p.videos:
-    video.streams.first().download(SAVE_PATH)
+    video.streams.filter(progressive=True, file_extension='mp4') \
+    .order_by('resolution')\
+    .desc()\
+    .first()\
+    .download(SAVE_PATH)
