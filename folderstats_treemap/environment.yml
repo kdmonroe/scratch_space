@@ -1,0 +1,12 @@
+name: diagram_folderstats
+
+channels:
+  - conda-forge
+
+dependencies:
+  - plotly
+  - squarify
+  - python-docx
+  - pip
+  - pip:
+      - folderstats
