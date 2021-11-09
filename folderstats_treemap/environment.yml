@@ -7,6 +7,7 @@ dependencies:
   - plotly
   - squarify
   - python-docx
+  - python-kaleido
   - pip
   - pip:
       - folderstats
