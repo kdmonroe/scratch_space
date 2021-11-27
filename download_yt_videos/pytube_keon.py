@@ -3,10 +3,11 @@
 from pytube import YouTube
  
 # where to save
-SAVE_PATH = "/Users/Monroe/Downloads" #to_do
+SAVE_PATH = "/Users/Monroe/Downloads"
  
 # link of the video to be downloaded
-link= 'https://www.youtube.com/watch?v=xr6uZDRTna0' # web application development intro - 14 hr
+link = 'https://www.youtube.com/watch?v=mt03Z2QjndQ' # p4e - geodata example
+# link= 'https://www.youtube.com/watch?v=xr6uZDRTna0' # web application development intro - 14 hr
 # 'https://www.youtube.com/watch?v=ZtqBQ68cfJc'
 # "https://www.youtube.com/watch?v=pkYVOmU3MgA" -- fcc jovian python data structures and algorithms
 # "https://www.youtube.com/watch?v=xWOoBJUqlbI"
@@ -24,6 +25,8 @@ yt.streams.filter(progressive=True, file_extension='mp4')\
 .desc()\
 .first()\
 .download(SAVE_PATH)
+
+print('\t\tCompleted...')
 
 # try:
 #     # object creation using YouTube
